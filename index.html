@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>Restaurant UI</title>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="dark-overlay"></div>
+
+    <main>
+      <section class="restaurant-info-container">
+        <div class="restaurant-info">
+          <h1>Restaurant App</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante nulla. Nullam tortor tellus, tempus sed consectetur id, egestas gravida ipsum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra orci lacus, eu faucibus tortor iaculis molestie. Duis nec nunc ac urna consequat aliquam.</p>
+        </div>
+
+        <div class="items-container">
+        </div>
+        
+        <div id="item-details-modal">
+          <div class="food-img"></div>
+          <h2></h2>
+          <p class="description"></p>
+          <form>
+            <input type="number" name="quantity" id="quantity" min="1" max="10" value="1" required>
+            <input type="hidden" id="price" name="price" value="">
+            
+            <fieldset id="primary-options"></fieldset>
+            <fieldset id="secondary-options"></fieldset>
+
+            <a class="btn-cancel">Cancel</a>
+            <button type="submit" value="Submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </section>
+
+      <aside id="basket">
+        <h2>Your Basket</h2>
+        <div id="basket-items-container">
+          <p id="empty-basket-msg">Your basket is empty</p>
+        </div>
+        <p id="total">Total: $HK<span></span></p>
+        <a class="btn-primary disabled">Checkout</a>
+      </aside>
+    </main>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
